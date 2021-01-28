@@ -1,0 +1,55 @@
+/* Trang chu */
+/* navbar */
+.header {
+    background-color: #e3f2fd;
+}
+
+/* content */
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.item-img img {
+    width: 100%;
+}
+
+.item-content p {
+    text-align: justify;
+}
+
+/* footer */
+.footer {
+    background-color: #e3f2fd;
+}
+
+.footer .copyright {
+    font-weight: bold;
+}
+
+.footer .mission {
+    text-align: justify;
+}
+
+/* Trang chi tiet */
+.article .article-title {
+    text-align: center;
+}
+
+.article > h2 {
+    margin-top: 20px;
+}
