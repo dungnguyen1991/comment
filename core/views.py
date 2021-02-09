@@ -28,7 +28,8 @@ class CommentView(CreateView):
 
 class ReplyView(View):
     def post(self, request, *args, **kwargs):
-        qs = Comment.objects.filter(id = 1)
+        comment_id = request.POST.get("comment", 1)
+        qs = Comment.objects.filter(id = comment_id)
         comment = qs.first()
         if request.user.is_authenticated:
             r = Reply(user = request.user, comment = comment, content= request.POST.get("content"))

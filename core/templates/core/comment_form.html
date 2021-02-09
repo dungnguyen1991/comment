@@ -19,7 +19,7 @@
             <form method="POST">
                 {% csrf_token %}
                 <!-- <input type="hidden" name="user" value="{{request.user}}" /> -->
-                {{ form.as_p }}
+                {{ form.content }}
                 <button type="submit" class="btn btn-primary">Post</button>
             </form>
         </div>
@@ -44,6 +44,7 @@
                             </div>
                         </div>
                         {% endfor %}
+                        <input type="hidden" id="c" name="c" value="{{ obj.comment.id }}" >
                         {% if request.user.is_authenticated %}
                         <input type="button" class="btn btn-secondary reply-button" value="Reply">
                         {% endif %}
